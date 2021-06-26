@@ -1,0 +1,17 @@
+---
+layout: default
+classes: guide
+---
+<div class="sidebar">
+    {% for entry in site.data[page.datafile].contents %}
+        {% assign pp = site.data[page.datafile].path-prefix | append: entry.path %}
+        {% if entry.separator %}<hr>
+        {% else %}<a href="{{ entry.path }}"{% if page.path contains pp %} class="active"{% endif %}>{{ entry.name }}</a>
+        {% endif %}
+    {% endfor %}
+</div>
+<div>
+<h1 id="-">{% if page.display %}{{ page.display }}{% else %}{{ page.title }}{% endif %}</h1>
+
+{{ content }}
+</div>

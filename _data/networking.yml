@@ -1,0 +1,33 @@
+# networking guide data
+path-prefix: networking/
+
+contents:
+  - path: index
+    name: Introduction
+  - separator: true
+  - path: packet-switching
+    name: Packet Switching and History
+  - path: ip
+    name: Internet Protocol (IP)
+  - path: udptcp
+    name: UDP and TCP
+  - path: dns
+    name: DNS and Domain Names
+  - path: connection-issues
+    name: Speed and Connection Issues
+  - path: mtr
+    name: MTR Tests
+  - separator: true
+  - path: binary
+    name: Binary and Number Systems
+  - path: ipsandsubnets
+    name: IPs and Subnets
+  - path: switching
+    name: Switching
+  - path: routing
+    name: Routing
+  - separator: true
+  - path: nat
+    name: NAT and PAT
+  - path: secure-connections
+    name: Secure Connections

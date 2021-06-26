@@ -1,0 +1,337 @@
+---
+---
+
+// variables
+//
+$desktop-width: 70rem
+$mobile-width: 30rem
+$standard_font_family: "Open Sans", sans-serif
+$content_font_family: "Open Sans", sans-serif
+$mono_font_family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
+
+// Media queries
+//
+@mixin respond-to($media)
+    @if $media == wide
+        @media only screen and (min-width: $desktop-width)
+            @content
+    @else if $media == desktop
+        @media only screen and (min-width: $mobile-width) and (max-width: $desktop-width)
+            @content
+    @else if $media == mobile
+        @media only screen and (max-width: $mobile-width)
+            @content
+
+// basics
+//
+html
+    box-sizing: border-box
+*, *:before, *:after
+    box-sizing: inherit
+
+html, body
+    font-family: $standard_font_family
+    height: 100%
+
+body > nav
+    font-size: 0.9em
+    z-index: 1000
+    border-bottom: 1px solid #e0dede
+    a
+        display: inline-block
+        padding: 0.25em 0 0.35em
+        font-style: normal
+        font-size: 0.94em
+        &:first-child
+            margin-right: 2rem
+        + a
+            margin-left: 1.4em
+        &.active
+            font-weight: 600
+
+// sizing
+#wrapper, .wrapper
+    width: calc(100% - 2rem)
+    max-width: $desktop-width - 2rem
+    margin: 0 auto
+
+#footer
+    padding-bottom: 1em
+    font-size: 0.8em
+    text-align: center
+
+table.sections
+    width: 100%
+    tr
+        &.h1 td a
+            font-weight: 700
+            display: block
+        td
+            > p
+                margin: 0
+        &.h1:not(:first-child) td
+            padding-top: 0.5em
+
+.highlight
+    padding-left: 1em
+
+.screenie
+    display: block
+    width: 60%
+    max-width: 100%
+    margin: 0 auto
+    border-radius: 0.2rem
+    border: 9px solid #303030
+    image-rendering: optimizeSpeed
+    image-rendering: -moz-crisp-edges
+    image-rendering: -webkit-optimize-contrast
+    image-rendering: optimize-contrast
+    image-rendering: pixelated
+    -ms-interpolation-mode: nearest-neighbor
+
+.sketch
+    display: block
+    width: auto
+    max-width: 100%
+    margin: 0 auto
+    border-radius: 0.5em
+    border: 1px solid #20202b8c
+
+.p8-pausescreen, .p8-cart
+    background: #303030
+    width: 530px
+    height: 552px
+    border: none
+    overflow: hidden
+    margin: 0 auto
+    display: block
+    border-radius: 0.2rem
+    &.hidden
+        display: none
+
+div.p8-pausescreen
+    background: url("../img/p8-clicktorun.png") no-repeat center bottom 30px, #303030
+    background-size: 512px
+    text-align: center
+    i
+        font-size: 15rem
+        color: #aeafb5
+        transition: color 0.2s ease-in-out
+        padding-top: 165px
+    &:hover i
+        color: #ec3e74
+
+hr
+    border: #9999bb9e 0.1rem solid
+    background: #9999bb9e
+    border-radius: 2rem
+    margin: 1.55rem auto
+    &.smol
+        border-color: #9999bb2e
+        background: #9999bb2e
+        width: 80%
+        + h3
+            padding-top: .25em
+
+
+body
+    background: #eef
+    color: #223
+    &.dark
+        background: #223
+        color: #eef
+
+a
+    text-decoration: none
+    font-style: italic
+    color: #23f
+
+h2
+    font-size: 1.8em
+    padding-top: .5em
+    margin-bottom: 0.2em
+    color: #22334c
+    &.nopad
+        padding-top: 0
+        margin: -0.3em 0 0.2em
+    + p
+        margin-top: 0.3em
+h3
+    color: #1a2940
+    padding-top: .5em
+    font-size: 1.3em
+    font-weight: 600
+    margin-bottom: 0.3em
+    + p
+        margin-top: 0.3em
+
+pre
+    white-space: break-spaces
+    &.nowrap
+        white-space: pre
+
+.wraptoggle
+    font-weight: 400
+    display: inline-block
+    border: 1px solid rgba(92,92,92,.6)
+    border-radius: .3em
+    padding: .2em .2em 0
+    font-size: .8em
+    label
+        float: right
+        margin: -.2em 0 0 .25em
+
+.tweetcart-titlepage
+    h1
+        text-align: center
+        margin-top: 1em
+    .abstract
+        margin: 0 auto
+        max-width: 45rem
+        font-size: .925em
+        p:first-child
+            font-size: 1.3em
+            margin-bottom: 0.5em
+.tweetcart-grid
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: center
+    align-items: baseline
+    align-content: start
+    .tweetcart
+        display: block
+        flex: 0 0 auto
+        margin: 1em
+        background: #232323
+        background: rgba(12, 12, 12, .89)
+        color: #eee
+        padding: .5em
+        border-radius: .4em
+        text-align: center
+        width: 28%
+        width: calc(30% - 1em)
+        min-width: 10em
+        img
+            width: 100%
+        span
+            display: block
+.tweetcart-start + h2
+    padding-top: .25em
+.halfgrid
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: center
+    align-items: baseline
+    align-content: start
+    > div, > a
+        display: block
+        flex: 0 0 auto
+        margin: 1em
+        background: #232323
+        background: rgba(12, 12, 12, .89)
+        color: #eee
+        padding: .5em
+        border-radius: .4em
+        text-align: center
+        width: 44%
+        width: calc(45% - 1em)
+        min-width: 15em
+        a
+            color: #8bf
+        img
+            width: 100%
+        p
+            margin: 0
+            + p
+                margin-top: .8em
+
+body.guide
+    #content
+        display: flex
+        .sidebar
+            width: 9em
+            flex: none
+            margin-top: 5.5em
+            margin-right: 1.5em
+            a
+                display: block
+                &.active
+                    font-weight: 600
+                    color: #222
+                    font-style: normal
+                    cursor: default
+                + a
+                    margin-top: .8em
+
+
+.advanced, .note
+    p
+        margin-bottom: 0
+        margin-top: 0
+    p + p
+        margin-top: .8em
+
+.advanced
+    &::before
+        display: block
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+        content: "Advanced"
+        font-size: 1.3rem
+        color: #2597cf
+        float: right
+        margin-top: -.5em
+
+    margin: 2rem 0
+    padding: 2rem 2.15rem 2rem 2.6rem
+    border-radius: 2rem 0.35rem 0.35rem 2rem
+    background: rgba(202, 222, 248, 0.411)
+
+.note
+    &::before
+        display: inline
+        content: "Note: "
+        font-weight: bold
+
+    margin: 2rem 0
+    padding: 2rem 2.15rem
+    border-radius: 2rem
+    background: rgba(202, 222, 248, 0.411)
+    & p:first-child
+        display: inline
+
+.anchor
+    display: none
+h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover .anchor
+    display: inline
+
+// dark mode button
+#darkmodebtn
+    display: block
+    position: fixed
+    left: 0
+    bottom: 0
+    padding: 0.5rem 0.7rem
+    font-size: 1.7rem
+    background: #eef
+    border-top-right-radius: 1rem
+    @print
+        display: none
+
+// dark mode
+body:not(.dark)
+    .show-when-dark
+        display: none
+body.dark
+    .show-when-light
+        display: none
+    #darkmodebtn
+        background: #223
+        color: #eef
+    a
+        color: #9af
+    h2
+        color: #c0d1ea
+    h3
+        color: #d6e3f5
