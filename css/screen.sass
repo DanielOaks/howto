@@ -251,10 +251,28 @@ body.guide
     #content
         display: flex
         .sidebar
-            width: 9em
+            width: 10em
             flex: none
-            margin-top: 5.5em
+            margin-top: 4.5em
             margin-right: 1.5em
+            > div
+                position: sticky
+                top: 0
+                padding: 1em .5em 1em 0
+                overflow-y: auto
+                max-height: 100vh
+                &::-webkit-scrollbar
+                    width: 6px
+                    height: 6px
+                &::-webkit-scrollbar-thumb
+                    background: #acb1da
+                    border-radius: 10px
+                &::-webkit-scrollbar-thumb:hover
+                    background: #e3e0e3
+                &::-webkit-scrollbar-track
+                    background: #ffffff
+                    border-radius: 10px
+                    box-shadow: inset -2px 6px 14px #b5baf8
             a
                 display: block
                 &.active
