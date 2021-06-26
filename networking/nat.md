@@ -1,14 +1,23 @@
 ---
 layout: guide
-title: NAT
+title: NAT and PAT
 datafile: networking
 ---
-PAT (or as we generally know it, NAT) is used to place multiple devices behind a single public IP address. Here, we'll go through the difference between public/private networks and exactly how PAT/NAT operates.
+NAT refers to technology that translates network addresses. PAT is a type of NAT that is used to place multiple devices behind a single IP address. It's a fairly complex topic, but here we'll go through the differences between private and public networks, and how PAT/NAT operate.
 
 <div class="note">
 	<p>NATs are a very strange, in-depth concept. If you don't get them at first or they take some time to understand, that's perfectly normal.</p>
     <p>In this article, when we say NAT we will be talking about traditional NATs – the devices that actually translate 1:1 between two blocks of address space. For what's typically referred to as a "NAT" today, we'll be using the more specific term PAT (port address translation). We'll explain the naming differences later on in the article, so keep this in mind if you get confused about what we say NATs do in here.</p>
 </div>
+
+
+## Why is PAT called NAT today?
+
+PAT is a type of NAT. PAT translates network addresses based on the port numbers on either side of the device, whereas traditional NAT translates network addresses based purely on the IP addresses on either side of the device.
+
+However, PAT is also the most widely-used form of NAT today. Because of that, when people say NAT, most of the time they're referring specifically to PAT. Keep that in mind when you're going through the NAT and PAT sections below.
+
+So that's why PAT is often just called NAT. Although, most people that aren't network engineers simply don't care about this distinction.
 
 
 ## Public vs Private IP Addresses
@@ -58,11 +67,11 @@ This is all well and good. However, the issue that business ran into was that if
 
 NAT stands for "Network Address Translation". NATs were initially created to solve the problem: If I'm using a private IP addresses inside my network, how can I convert those into public IP addresses?
 
-What a standard NAT device does is have two ports -- one as the outside (public) interface, and one for the inside (private) interface. The private and public address ranges are specified, and the NAT converts the addresses as appropriate when sending packets in/out. Here's an example network making use of a NAT device:
+What a standard NAT device does is have two ports -- one as the outside (public) interface, and one for the inside (private) interface. The private and public address ranges are specified, and the NAT converts the addresses as appropriate when sending packets in/out. Here's an example setup making use of a NAT device:
 
 ![NAT diagram](img/nat/nat.svg "NAT diagram")
 
-The NAT device doesn't exactly act like a router. It does translate IP addresses, but doesn't act as a router hop on the network. Essentially, it behaves similarly to a switch if all the devices inside the private network were numbered from `143.15.2.1-254`
+The NAT device connects between different broadcast domains, so it acts like a router. But to the devices on the network, it's transparent and appears like a switch with all the devices inside the private network also in the `143.15.2.0/24` address space.
 
 Let's say that the devices in this diagram have the following addresses:
 
@@ -126,7 +135,7 @@ When the PAT gateway gets a packet from the internal network destined for outsid
 
 For that source IP/port, the gateway generates a random UDP/TCP port on the public IP address to represent that connection, and stores it in an internal list. If it already has an entry in its' list for that internal IP/port, it uses that existing public port.
 
-The PAT gateway switches the source IP address from the internal IP to its' public IP, and the source port from the original port to the public port it allocated for that connection.
+The PAT gateway changes the source IP address from the internal IP to its' public IP, and the source port from the original port to the public port it allocated for that connection.
 
 For example, let's say that a packet comes from `192.168.0.3:13845` and is being sent to `8.8.8.8:80`. The router says "I don't have an entry for packets coming from `192.168.0.3:13845`" and allocates public port `5432` for it. Whenever the router sees a packet from `192.168.0.3:13845`, it will change the source IP address to `143.15.2.176`, change the source port to `5432`, and send the packet on its' way.
 
@@ -182,15 +191,6 @@ then sending a packet to `143.15.2.176:80` always results in it being sent to `1
     <p>The public server tells computer A the public IP/Port it uses to contact computer B, and tells computer B the public IP/Port it uses to contact computer A.</p>
     <p>After this, both machines simply start sending traffic towards the public IP/port of the other machine, and can now communicate P2P despite the fact that they're both behind NATs. Neat, huh?</p>
 </div>
-
-
-### Why is PAT called NAT today?
-
-Simply put, PAT is a type of NAT. PAT translates network addresses based on the port numbers on either side of the device, whereas traditional NAT translates network addresses based purely on the IP addresses on either side of the device.
-
-However, PAT is also the most widely-used form of NAT today. Because of that, when people say NAT, most of the time they're referring specifically to PAT.
-
-So that's why PAT is often just called NAT. Although, most people that aren't network engineers simply don't care about this distinction.
 
 
 ## Overview

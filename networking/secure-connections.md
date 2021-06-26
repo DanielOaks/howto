@@ -7,7 +7,7 @@ Secure connections are commonly used when talking about computer security. Here,
 
 Generally, secure connections should be:
 
-- **Authenticated**: Both machines should be sure that they're talking to the right person.
+- **Authenticated**: One or both machines should be sure that they're talking to the right person.
 - **Confidential**: The only machines that can read the data should be the machines at either end.
 - **Unmodified**: The data should not be able to be modified or replaced in the middle of the connection (also called 'data integrity').
 
@@ -21,7 +21,7 @@ Let's go over each of these properties, and why each is necessary for establishi
 
 ## Authentication
 
-Both machines need to be sure of who they're talking to. For instance:
+One or both machines need to be sure of who they're talking to. For instance:
 
 ![Authenticated Session](img/secure-connections/authenticated.svg "Authenticated Session")
 
@@ -67,7 +67,7 @@ Because there is no verification that the message was sent correctly, unmodified
 
 A communication channel can be secure if it has:
 
-- **Authentication**: Both sides can be sure of who they're talking to.
+- **Authentication**: One or both sides can be sure of who they're talking to.
 - **Confidentiality**: Nobody can spy and discover what's being said in the middle.
 - **Integrity**: Nobody can replace, replay, or tamper with messages in the middle.
 
