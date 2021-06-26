@@ -272,6 +272,8 @@ body.guide
         margin-top: 0
     p + p
         margin-top: .8em
+    margin: 2rem 0
+    background: rgba(202, 222, 248, 0.411)
 
 .advanced
     &::before
@@ -283,10 +285,8 @@ body.guide
         float: right
         margin-top: -.5em
 
-    margin: 2rem 0
     padding: 2rem 2.15rem 2rem 2.6rem
     border-radius: 2rem 0.35rem 0.35rem 2rem
-    background: rgba(202, 222, 248, 0.411)
 
 .note
     &::before
@@ -294,10 +294,8 @@ body.guide
         content: "Note: "
         font-weight: bold
 
-    margin: 2rem 0
     padding: 2rem 2.15rem
     border-radius: 2rem
-    background: rgba(202, 222, 248, 0.411)
     & p:first-child
         display: inline
 
@@ -340,3 +338,8 @@ body.dark
             filter: hue-rotate(180deg) invert(1)
         .sidebar a.active
             color: #eee
+    .advanced, .note
+        background: rgba(202, 222, 248, 0.12)
+    .advanced
+        &::before
+            color: #7bb4d0
