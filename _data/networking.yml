@@ -28,6 +28,6 @@ contents:
     name: Routing
   - separator: true
   - path: nat
-    name: NAT and PAT
+    name: Network Address Translation (NAT)
   - path: secure-connections
     name: Secure Connections
