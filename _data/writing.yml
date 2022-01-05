@@ -1,0 +1,9 @@
+# guide data
+path-prefix: writing/
+
+contents:
+  - path: index
+    name: Introduction
+  - separator: true
+  - path: wanting-to-be-read
+    name: Does Your Writing Want To Be Read?
