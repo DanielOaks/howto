@@ -34,7 +34,7 @@ Why do people like stories? Because they're (usually) a fun way to convey what's
 >
 > In the old 'backplane' system, every part of the computer was separate and was just combined with cables and connectors. This made things hard, because the different parts of the computer couldn't work together as well.
 
-This gives information, yes. It explains when the motherboard was developed, by who, and why. It then jumps info the future and explains all the amazing things the motherboard does these days (in a bit of a clunky, hard-to-read way).
+This gives information, yes. It explains when the motherboard was developed, by who, and why. It then jumps into the future and explains all the amazing things the motherboard does these days (in a bit of a clunky, hard-to-read way).
 
 But then it jumps back in time for… no real reason? Why explain the backplane now when we've already moved on? The story's told out of order and it's giving us too much information in some parts (the IBM Personal Computer, wow how interesting).
 
