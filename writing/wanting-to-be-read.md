@@ -5,7 +5,7 @@ datafile: writing
 ---
 There are hundreds, thousands, even **millions** of topics to read about. Why would anyone bother reading about _this_?
 
-Even within each topic, someone else has or is going to write about it. Why should someone read _your_ writing, and not theirs?
+Even within each topic, someone else has or is going to write about it. Why should someone read _your_ writing and not theirs?
 
 -----
 
@@ -56,13 +56,52 @@ In the above explanation, the name 'IBM Personal Computer' was mentioned, and I 
 
 ### Be Confident
 
-You're the writer here. You're the one writing this content and deciding what language it should include.
+**You're the writer here.** You're the one writing this content and deciding what language it should include.
 
-Corporate, committee-driven text is dull. Amazingly dull. So much so that I'd rather grab an electric fence than read a full document of it. If you care so much about sticking to a professional tone that your writing loses every ounce of flair and excitement, readers will pick up on that.
+Corporate, committee-driven text is dull. Amazingly dull. So much so that I'd rather grab an electric fence than read a full document of it. If you care about sticking to a professional tone so much that your writing loses every ounce of flair and excitement, readers will pick up on that.
 
 You don't need to put similies about volcanoes and stories about lions being zapped with lasers into every paragraph that you write. But don't be afraid to show that you're in control of your text. That you're able to include **a voice** and **a tone** into it.
 
-This is your shot to explain this concept or topic to someone who probably doesn't want to listen. Don't make them regret sitting through your writing – make them **understand the topic** and make them enjoy **reading** your text as much as you enjoyed **writing** it.
+This is your shot to explain *this* concept or topic to someone who probably doesn't want to listen. Don't make them regret sitting through your writing – make them **understand the topic** and make them **enjoy reading** your text as much as you enjoyed **writing** it. And if you haven't enjoyed writing it, then find some way to enjoy it! Can you include some fun, unexpected fact or example? Can you slip in some note or wording that makes it past the censors? Have fun with it and your readers probably will as well.
+
+-----
+
+> <span style="color: #d35; font-weight: bold;">Not Amazing</span>
+>
+> Thank you for purchasing WordDefender 2.7.4b. This word processing application lets you write text your way. There are many advanced features included, such as:
+>
+> - Tone detection: checks your writing to confirm it matches the given sample tone.
+> - Format autocompletion: detects the current document format and suggests autocompletions.
+> - Review mechanisms built-in: enables other writers to add comments quickly and easily.
+>
+> -----
+>
+> This manual describes how to enable and use these features while writing.
+
+Snore. This is… fine, but it's so boring that I want to go to sleep. This is corporate drivel, and while it might be what some companies want, it won't inspire any feeling or action at all in the reader.
+
+Every sentence in this piece of text feels like it was passed by three middle-managers for approval. There's no **life** or **energy** in it.
+
+---
+
+> <span style="color: #5b3; font-weight: bold;">Better</span>
+>
+> Welcome to WordDefender 2.7 – the latest and greatest word processor on the market. We've designed this app to help you write with advanced features, and by getting out of your way when you're in a flow state.
+>
+> Here are some of the tools that'll improve your writing:
+>
+> - **Tone Detection**: Have you ever been halfway through a document and had trouble finding which word or phrase sounds right? _Tone Detection_ keeps track of how your file reads, suggesting appropriate words when it seems like you're stuck.
+> - **Format Autocompletion**: Rather than figuring out which type of report or what script format would be best before starting, _Format Autocompletion_ will suggest the most appropriate format after you've started putting content on your page.
+> - **Review Mechanisms**: If you're like me, getting someone else to double-check your work before sending it out is always helpful. WordDefender makes it easy, integrating with your existing chat software to let you easily send and receive feedback from other writers.
+
+Now isn't that a little more exciting? Doesn't it feel like one person wrote that, and that they **enjoyed** writing it? The energy that was brought into the writing process comes out in the text, plain as day.
+
+_"the latest and greatest word processor on the market"_ – it's a bit cocky, sure, but it feels like something they're actually proud of presenting to whoever's reading. And they don't overspecify the version number `2.7.4b` and bog down the text in the process. It feels like whoever said 'you should write a manual' didn't get in the way or micromanage the result, they just helped the writer get excited about the project and let them write.
+
+-----
+
+Don't get me wrong, you don't need to (and shouldn't) ignore any and all valid feedback about what you've written. But keep enough of that spark in there that it's clear you enjoyed writing whatever it is.
+
 
 
 
