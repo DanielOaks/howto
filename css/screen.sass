@@ -52,8 +52,10 @@ body > nav
 // sizing
 #wrapper, .wrapper
     width: calc(100% - 2rem)
-    max-width: $desktop-width - 2rem
+    max-width: $desktop-width
     margin: 0 auto
+    padding: 0 2rem
+    background: #fff
 
 #footer
     padding-bottom: 1em
@@ -342,6 +344,8 @@ body:not(.dark)
 body.dark
     .show-when-light
         display: none
+    #wrapper, .wrapper
+        background: #222
     #darkmodebtn
         background: #223
         color: #eef
