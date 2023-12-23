@@ -1,0 +1,13 @@
+---
+layout: default
+classes: landing
+---
+<h1 id="-" class="text-4xl font-semibold">{{ site.data[page.datafile].title }}</h1>
+{% if site.data[page.datafile].subtitle %}
+<div class="text-xl italic text-red-700 dark:text-red-200">{{ site.data[page.datafile].subtitle }}</div>
+{% endif %}
+<div class="h-3"></div>
+
+<div id="content">
+{{ content }}
+</div>

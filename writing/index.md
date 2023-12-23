@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: landing
 title: Explanatory Writing
 datafile: writing
 ---

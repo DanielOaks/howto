@@ -1,51 +1,42 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="min-h-screen">
     <head>
         <title>{% if page.html_title %}{{ page.html_title }}{% else %}{{ page.title }}{% endif %}</title>
-        
-        <link href="/css/open-sans.css" rel="stylesheet" type="text/css" />
-        <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="/css/pure-min.css" rel="stylesheet" type="text/css" />
+
         <link href="/css/screen.css" rel="stylesheet" type="text/css" />
-        <link href="/css/code-github.css" rel="stylesheet" type="text/css" />
-        <link href="/css/code-thankful.css" rel="stylesheet" type="text/css" />
+        <link href="/css/tailwind.css" rel="stylesheet" type="text/css" />
 
         <meta charset='utf-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     </head>
-    <body class="{{ page.classes }} {{ layout.classes }}">
+    {% assign extension = page.name | split: "." | last %}
+    <body class="{{ page.classes }} {{ layout.classes }} {% if extension == 'md' %}md{% endif %} min-h-screen bg-slate-200 dark:bg-slate-800 text-black dark:text-white">
         <script>
             // enable dark mode
             if (document.cookie.includes("darkmode=true")) {
-                document.body.classList.add("dark");
+                document.documentElement.classList.add("dark");
             }
         </script>
         <a onclick="toggledarkmode()" id="darkmodebtn"><i class="fa fa-sun-o show-when-dark"></i><i class="fa fa-moon-o show-when-light"></i></a>
-        
-        <nav>
-            <div class="wrapper linklist">
-                <a href="/" class="wordmark" title="homepage" alt="homepage">howto</a>
-                <a href="/networking/" title="networking" alt="networking"{% if page.path contains "networking/" %} class="active"{% endif %}>networking</a>
-                <a href="/writing/" title="writing" alt="writing"{% if page.path contains "writing/" %} class="active"{% endif %}>writing</a>
-            </div>
-        </nav>
-        <div id="wrapper">
-            <div id="content">
-                {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor" %}
-            </div>
+
+        <div class="bg-slate-900 dark:bg-slate-950">
+            <nav class="wrapper flex gap-4">
+                <a href="/" title="homepage" alt="homepage" class="block pr-3 mr-3 text-slate-100 py-0.5">howto</a>
+                <a href="/networking/" title="networking" alt="networking" class="text-slate-100 py-0.5 {% if page.path contains "networking/" %}active{% endif %}">networking</a>
+                <a href="/writing/" title="writing" alt="writing" class="text-slate-100 py-0.5 {% if page.path contains "networking/" %}active{% endif %}">writing</a>
+            </nav>
         </div>
-        <div id="footer">
-            <div class="wrapper">
-                <p>
-                    Written by <a href="https://github.com/DanielOaks">Daniel Oaks</a>, released under public domain CC0
-                </p>
-            </div>
+        <div class="wrapper pt-4 pb-6 rounded-b-lg bg-white dark:bg-slate-900">
+            {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor" %}
         </div>
+        <footer class="sticky top-[100vh] wrapper text-center text-sm mt-2 mb-3">
+            Written by <a href="https://github.com/DanielOaks">Daniel Oaks</a>, released under public domain CC0
+        </footer>
     </body>
     <script>
         function toggledarkmode() {
-            document.body.classList.toggle("dark");
-            if (document.body.classList.contains("dark")) {
+            document.documentElement.classList.toggle("dark");
+            if (document.documentElement.classList.contains("dark")) {
                 document.cookie = "darkmode=true; path=/";
             } else {
                 document.cookie = "darkmode=false; path=/";

@@ -1,0 +1,60 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.anchor {
+    @apply invisible;
+}
+
+.wrapper {
+    @apply mx-auto px-4 mx-auto max-w-[68rem];
+}
+
+a {
+    @apply text-[#2b56d3] dark:text-[#b0c4ff];
+}
+
+p + p {
+    @apply mt-2;
+}
+
+hr {
+    @apply my-5 block border-none w-32 max-w-full h-2 rounded mx-auto bg-slate-300 dark:bg-slate-800;
+}
+
+body.md #content {
+    h2 {
+        @apply text-3xl font-semibold mt-11 mb-2;
+    }
+
+    ul, ol {
+        @apply mt-1 mb-3;
+        li {
+            @apply ml-8 my-1.5;
+        }
+    }
+    ol {
+        li {
+            @apply list-decimal;
+        }
+    }
+    ul {
+        li {
+            @apply list-disc;
+        }
+    }
+
+    pre {
+        @apply my-4 ml-8 overflow-x-auto max-w-full;
+    }
+    
+    img {
+        @apply dark:hue-rotate-180 dark:invert;
+    }
+    img.preserve {
+        @apply dark:hue-rotate-0 dark:invert-0;
+    }
+}

@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: landing
 title: Networking
 datafile: networking
 ---

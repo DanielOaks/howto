@@ -2,16 +2,21 @@
 layout: default
 classes: guide
 ---
-<div class="sidebar"><div><div>
-    {% for entry in site.data[page.datafile].contents %}
-        {% assign pp = site.data[page.datafile].path-prefix | append: entry.path %}
-        {% if entry.separator %}<hr>
-        {% else %}<a href="{{ entry.path }}"{% if page.path contains pp %} class="active"{% endif %}>{{ entry.name }}</a>
-        {% endif %}
-    {% endfor %}
-</div></div></div>
-<div>
-<h1 id="-">{% if page.display %}{{ page.display }}{% else %}{{ page.title }}{% endif %}</h1>
+<div class="flex gap-6">
+    <nav class="w-[11rem] flex-shrink-0 flex flex-col gap-3">
+        {% for entry in site.data[page.datafile].contents %}
+            {% assign pp = site.data[page.datafile].path-prefix | append: entry.path %}
+            {% if entry.separator %}<hr class="my-0">
+            {% else %}<a href="{{ entry.path }}" class="{% if page.path contains pp %}dark:text-slate-200{% endif %}">{{ entry.name }}</a>
+            {% endif %}
+        {% endfor %}
+    </nav>
+<div class="max-w-full overflow-x-hidden">
+    <h1 id="-" class="text-4xl font-semibold">{% if page.display %}{{ page.display }}{% else %}{{ page.title }}{% endif %}</h1>
+    <div class="h-3"></div>
 
-{{ content }}
+    <div id="content">
+    {{ content }}
+    </div>
+</div>
 </div>

@@ -3,5 +3,14 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
+  - vendor
+
 gems:
   - jekyll-sitemap
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
+sass:
+  sass_dir: css
