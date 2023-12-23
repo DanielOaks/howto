@@ -22,3 +22,7 @@ In this site, I hope to break down what makes good technical (and explanatory) w
 And why do **both** of those examples succeed in explaining difficult concepts despite being so very different?
 
 I don't know why or how they do it, but I'm hoping to find out by making these pages.
+
+-----
+
+[Does Your Writing Want To Be Read?](/writing/wanting-to-be-read)
