@@ -20,3 +20,7 @@ classes: guide
     </div>
 </div>
 </div>
+
+{% if site.data[page.datafile].css-file %}
+<link href="/{{ site.data[page.datafile].path-prefix | append: site.data[page.datafile].css-file }}" rel="stylesheet" type="text/css" />
+{% endif %}

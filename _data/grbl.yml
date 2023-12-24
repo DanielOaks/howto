@@ -1,0 +1,10 @@
+# grbl guide data
+path-prefix: grbl/
+css-file: grbl.css
+
+contents:
+  - path: index
+    name: Introduction
+  - separator: true
+  # - path: packet-switching
+  #   name: Packet Switching and History
