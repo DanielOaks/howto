@@ -38,3 +38,9 @@ body:not(.dark)
 body.dark
     .show-when-light
         display: none
+
+body.md #content, .base-formatting
+    .advanced::before
+        content: "Advanced: "
+    .note::before
+        content: "Note: "
