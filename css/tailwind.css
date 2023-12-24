@@ -78,9 +78,9 @@ body.md #content, .base-formatting {
         }
     }
     .advanced {
-        @apply before:content-['Advanced:_'] before:text-orange-700 border-orange-400 dark:before:text-orange-400 dark:border-orange-700;
+        @apply before:content-['Advanced\:_'] before:text-orange-700 border-orange-400 dark:before:text-orange-400 dark:border-orange-700;
     }
     .note {
-        @apply before:content-['Note:_'] before:text-blue-700 border-blue-400 dark:before:text-blue-400 dark:border-blue-700;
+        @apply before:content-['Note\:_'] before:text-blue-700 border-blue-400 dark:before:text-blue-400 dark:border-blue-700;
     }
 }
