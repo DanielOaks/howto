@@ -28,8 +28,6 @@ html, body
     font-size: 1.7rem
     background: #eef
     border-top-right-radius: 1rem
-    @print
-        display: none
 
 // dark mode
 body:not(.dark)
@@ -41,6 +39,6 @@ body.dark
 
 body.md #content, .base-formatting
     .advanced::before
-        content: "Advanced: "
+        content: "Advanced: " !important
     .note::before
-        content: "Note: "
+        content: "Note: " !important

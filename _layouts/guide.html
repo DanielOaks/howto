@@ -3,7 +3,7 @@ layout: default
 classes: guide
 ---
 <div class="flex gap-6">
-    <nav class="w-[12rem] flex-shrink-0 flex flex-col items-stretch gap-2 bg-slate-50 border-slate-300 dark:bg-slate-950 dark:border-slate-800 border-r-2 pt-7 pb-4 px-4 -mb-6 -ml-4 rounded-bl-xl -mt-4">
+    <nav class="w-[12rem] flex-shrink-0 flex flex-col items-stretch gap-2 bg-slate-50 border-slate-300 dark:bg-slate-950 dark:border-slate-800 border-r-2 pt-7 pb-4 px-4 -mb-6 -ml-4 rounded-bl-xl -mt-4 print:hidden">
         {% for entry in site.data[page.datafile].contents %}
             {% assign pp = site.data[page.datafile].path-prefix | append: entry.path %}
             {% if entry.separator %}<hr class="mt-3 mb-2 h-1">

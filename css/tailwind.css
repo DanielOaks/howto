@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#darkmodebtn {
+    @apply print:hidden;
+}
+
 .anchor {
     @apply invisible;
 }
@@ -65,7 +69,7 @@ body.md #content, .base-formatting {
     }
 
     img {
-        @apply dark:hue-rotate-180 dark:invert;
+        @apply dark:hue-rotate-180 dark:invert print:dark:hue-rotate-0 print:dark:invert-0 break-inside-avoid-page;
     }
     img.preserve {
         @apply dark:hue-rotate-0 dark:invert-0;

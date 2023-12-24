@@ -19,14 +19,14 @@
         </script>
         <a onclick="toggledarkmode()" id="darkmodebtn"><i class="fa fa-sun-o show-when-dark"></i><i class="fa fa-moon-o show-when-light"></i></a>
 
-        <div class="bg-slate-900 dark:bg-slate-950">
+        <div class="bg-slate-900 dark:bg-slate-950 print:hidden">
             <nav class="wrapper flex gap-4">
                 <a href="/" title="homepage" alt="homepage" class="block pr-3 mr-3 text-slate-100 py-0.5">howto</a>
                 <a href="/networking/" title="networking" alt="networking" class="text-slate-100 py-0.5 {% if page.path contains "networking/" %}active{% endif %}">networking</a>
                 <a href="/writing/" title="writing" alt="writing" class="text-slate-100 py-0.5 {% if page.path contains "networking/" %}active{% endif %}">writing</a>
             </nav>
         </div>
-        <div class="wrapper pt-4 pb-6 rounded-b-xl bg-white dark:bg-slate-900 shadow-lg shadow-slate-300 dark:shadow-slate-900">
+        <div class="wrapper pt-4 pb-6 rounded-b-xl bg-white dark:bg-slate-900 shadow-lg shadow-slate-300 dark:shadow-slate-900 print:shadow-none">
             {% include anchor_headings.html html=content anchorBody="#" anchorClass="anchor" %}
         </div>
         <footer class="sticky top-[100vh] wrapper text-center text-sm mt-2 mb-3">
