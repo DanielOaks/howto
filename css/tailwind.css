@@ -28,7 +28,11 @@ hr {
     @apply my-5 block border-none w-32 max-w-full h-2 rounded mx-auto bg-slate-300 dark:bg-slate-800;
 }
 
-body.md #content {
+emph {
+    @apply italic;
+}
+
+body.md #content, .base-formatting {
     h2 {
         @apply text-3xl font-semibold mt-11 mb-2;
     }
