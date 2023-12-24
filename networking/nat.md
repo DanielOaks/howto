@@ -27,7 +27,7 @@ Now the question is, how do you let hosts using private IP addresses talk to hos
 <div class="advanced">
 	<p><strong>Private and Other Addressing Types</strong></p>
     <p>There are some other private IP ranges, namely: &nbsp;&nbsp;&nbsp;<tt>10.0.0.0/8</tt> &nbsp;&nbsp;&nbsp;<tt>172.16.0.0/12</tt> &nbsp;&nbsp;&nbsp;<tt>192.168.0.0/16</tt> &nbsp;&nbsp;&nbsp;<tt>fc00::/7</tt></p>
-    <p>And yeah there's other kinds of IP address space such as multicast space, and with anycast routing a single IP can refer to multiple hosts, but this is a very simplified explanation. I feel like the tradeoffs of not describing those details here are fine.</p>
+    <p>And yes there's other kinds of IP address space such as multicast space, and with anycast routing a single IP can refer to multiple hosts, but this is a very simplified explanation. I feel like the tradeoffs of not describing those details here are fine.</p>
 </div>
 
 

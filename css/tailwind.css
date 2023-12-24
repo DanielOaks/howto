@@ -36,6 +36,12 @@ body.md #content, .base-formatting {
     h2 {
         @apply text-3xl font-semibold mt-11 mb-2;
     }
+    h3 {
+        @apply text-2xl font-semibold mt-7 mb-2;
+    }
+    h4 {
+        @apply text-xl font-semibold mt-7 mb-2;
+    }
 
     ul, ol {
         @apply mt-1 mb-3;
@@ -63,5 +69,18 @@ body.md #content, .base-formatting {
     }
     img.preserve {
         @apply dark:hue-rotate-0 dark:invert-0;
+    }
+
+    .advanced, .note {
+        @apply my-4 py-4 px-5 rounded-xl border-2 before:inline-block before:font-bold;
+        :first-child {
+            @apply inline-block;
+        }
+    }
+    .advanced {
+        @apply before:content-['Advanced:_'] before:text-orange-700 border-orange-400 dark:before:text-orange-400 dark:border-orange-700;
+    }
+    .note {
+        @apply before:content-['Note:_'] before:text-blue-700 border-blue-400 dark:before:text-blue-400 dark:border-blue-700;
     }
 }

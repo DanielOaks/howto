@@ -6,8 +6,11 @@ path-prefix: networking/
 
 contents:
   - path: index
-    name: Introduction
+    name: Overview
   - separator: true
+  - path: basics
+    name: Networking Basics
+    bold: true
   - path: packet-switching
     name: Packet Switching and History
   - path: ip
@@ -21,6 +24,9 @@ contents:
   - path: mtr
     name: MTR Tests
   - separator: true
+  - path: advanced
+    name: Advanced Networking
+    bold: true
   - path: binary
     name: Binary and Number Systems
   - path: ipsandsubnets
@@ -30,6 +36,9 @@ contents:
   - path: routing
     name: Routing
   - separator: true
+  - path: extra-credit
+    name: Extra Credit
+    bold: true
   - path: nat
     name: Network Address Translation (NAT)
   - path: secure-connections
