@@ -1,0 +1,49 @@
+.grblCover {
+  background: rgba(255, 255, 255, 0.05);
+  display: block;
+  padding: 2em 2.5em;
+  width: 25em;
+  font-weight: 600;
+  border-radius: 1em;
+}
+
+.grblCover img,
+.grblCover span {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.grblCover span.and {
+  text-indent: 20%;
+}
+
+.grblCover span.pg {
+  text-indent: 35%;
+}
+
+.grblCover span.copyright {
+  margin-top: 1.8em;
+  font-weight: 400;
+  font-size: 0.85em;
+  text-align: right;
+}
+
+.grblCover img {
+  margin: 0.5em auto;
+  max-width: calc(100% - 4em);
+}
+
+.grblCover .grbl,
+.grblCover .grblhal {
+  position: relative;
+}
+
+.grblCover .grbl {
+  left: -2em;
+  margin-bottom: 1em;
+}
+
+.grblCover .grblhal {
+  left: 2em;
+}

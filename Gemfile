@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 
-gem 'jekyll-postcss'
 gem 'jekyll-redirect-from'
 gem 'jekyll-sitemap'
 gem 'jekyll'

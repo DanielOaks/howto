@@ -1,8 +1,21 @@
 {
+  "name": "howto",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i css/tailwind.src.css -o css/tailwind.css --postcss --minify",
+    "build:jekyll": "bundle exec jekyll build",
+    "build": "npm run build:css && npm run build:jekyll",
+    "watch:css": "tailwindcss -i css/tailwind.src.css -o css/tailwind.css --postcss --watch",
+    "serve:jekyll": "bundle exec jekyll serve --livereload",
+    "serve": "concurrently \"npm:watch:css\" \"npm:serve:jekyll\"",
+    "start": "npm run serve"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "concurrently": "^10.0.5",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.1",
     "tailwindcss": "^3.3.6"
   }
 }

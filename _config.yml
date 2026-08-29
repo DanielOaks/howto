@@ -3,14 +3,11 @@ exclude:
   - CNAME
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
   - vendor
+  - css/tailwind.src.css
 
-gems:
+plugins:
   - jekyll-sitemap
-  - jekyll-postcss
-
-postcss:
-  cache: false
-
-sass:
-  sass_dir: css
