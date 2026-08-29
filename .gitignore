@@ -99,3 +99,4 @@ $RECYCLE.BIN/
 /.bundle
 /vendor
 /node_modules
+css/tailwind.css
