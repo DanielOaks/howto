@@ -1,0 +1,26 @@
+
+#content img {
+    max-width: 75%;
+    max-height: 70vh;
+    border-radius: 0.8em;
+    border: #eef 1px solid;
+    background: #fff;
+    padding: 8px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.02), 
+                0 8px 10px -6px rgba(0, 0, 0, 0.02);
+}
+
+#content :is(.dark img) {
+    border-color: #000;
+    background: #223;
+}
+
+#content img + img {
+    margin-top: .25em;
+}
+
+body.md #content :is(.dark img), .base-formatting :is(.dark img) {
+    /* don't invert images in this guide */
+    --tw-invert: invert(0%);
+    --tw-hue-rotate: hue-rotate(0deg);
+}

@@ -1,0 +1,10 @@
+# making-interesting-backgrounds guide data
+path-prefix: making-interesting-backgrounds/
+css-file: making-interesting-backgrounds.css
+
+contents:
+  - path: index
+    name: Introduction
+  - separator: true
+  - path: creating-location-concepts
+    name: Creating location concepts

@@ -9,6 +9,8 @@ module.exports = {
     './networking/*.html',
     './writing/*.md',
     './writing/*.html',
+    './making-interesting-backgrounds/*.md',
+    './making-interesting-backgrounds/*.html',
     './*.md',
     './*.html',
   ],
