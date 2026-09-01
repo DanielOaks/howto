@@ -59,11 +59,11 @@ At this stage, keeping your thumbnails in greys (no colours) can help a lot. It�
 
 Let’s see what one of our [skilled artist friends OJ](https://twitter.com/ahappypichu/) comes up with from the above:
 
-![alt text](img/creating-concepts/oj/oj-01.png)
+![Sketchy, internal round house shot](img/creating-concepts/oj/oj-01.png)
 
-![alt text](img/creating-concepts/oj/oj-02.png)
+![Sketchy external house shot](img/creating-concepts/oj/oj-02.png)
 
-![alt text](img/creating-concepts/oj/oj-03.png)
+![Sketchy external house shot](img/creating-concepts/oj/oj-03.png)
 
 Ooh, very cool! An internal shot and a couple of external shots. We like the direction these are going in, so let’s try fleshing this concept out.
 
@@ -100,8 +100,8 @@ And, all of these things can be worked out with thumbnails! Since these are big-
 
 Take a look at [Chang-Wei Chen’s work](https://www.artstation.com/willischen) for inspiration, and you can see his process for figuring out a location in this example:
 
-![alt text](img/creating-concepts/samples-cwc/cwc-1.png)
-![alt text](img/creating-concepts/samples-cwc/cwc-2.png)
+![Illustration showing a top-down map and several sketches of an area](img/creating-concepts/samples-cwc/cwc-1.png)
+![Tied-down illustration of the same area from the last illustration](img/creating-concepts/samples-cwc/cwc-2.png)
   </div>
 </details>
 
@@ -178,7 +178,7 @@ If the location is something like a set, you’ll want a clear idea of how the l
 
 Let’s take [OJ’s](https://twitter.com/ahappypichu/) concept from above and see one of the layout drawings he’s made of it:
 
-![alt text](img/creating-concepts/oj/oj-04.png)
+![Top-down layout sketch of a two-level space including a living area and a bedroom](img/creating-concepts/oj/oj-04.png)
 
 In this layout you can see the main living area on the right – complete with a kitchen, a balcony with a telescope, and some stairs heading up. On the left, you can see a small bedroom slash study, which looks like an interesting area.
 
@@ -190,20 +190,20 @@ Let’s look at some example location and layout images:
   <div class="tab-content" markdown="1">
 One of the interesting things with Half Life’s concept/planning art is the different levels of quality in there. I’m also a fan of the tied-down images below having little layouts in the corner – it’s an interesting way of combining the layout and tied-down images.
 
-![alt text](img/creating-concepts/samples-hl/c1a4-2.jpg)
-![alt text](img/creating-concepts/samples-hl/c2a5-1.jpg)
-![alt text](img/creating-concepts/samples-hl/c1a4-3.jpg)
-![alt text](img/creating-concepts/samples-hl/unknown-1.jpg)
-![alt text](img/creating-concepts/samples-hl/c1a4-1.jpg)
+![Half Life concept art sketch](img/creating-concepts/samples-hl/c1a4-2.jpg)
+![Half Life concept art sketch](img/creating-concepts/samples-hl/c2a5-1.jpg)
+![Half Life concept art sketch](img/creating-concepts/samples-hl/c1a4-3.jpg)
+![Half Life concept art sketch](img/creating-concepts/samples-hl/unknown-1.jpg)
+![Half Life concept art sketch](img/creating-concepts/samples-hl/c1a4-1.jpg)
   </div>
 </details>
 
 <details>
   <summary>💎 Steven Universe</summary>
   <div class="tab-content" markdown="1">
-![alt text](img/creating-concepts/samples-su/su-1.jpg)
-![alt text](img/creating-concepts/samples-su/su-3.png)
-![alt text](img/creating-concepts/samples-su/su-2.png)
+![Steven Universe concept art - top-down map of Beach City](img/creating-concepts/samples-su/su-1.jpg)
+![Steven Universe concept art - side-on view of the boardwalk](img/creating-concepts/samples-su/su-3.png)
+![Steven Universe concept art - sketch of the mountain details](img/creating-concepts/samples-su/su-2.png)
   </div>
 </details>
 
@@ -244,22 +244,22 @@ We won’t focus too much on creating interesting shots in this lesson – that�
 This section will be different from the ones above – let’s take a look at [OJ’s](https://twitter.com/ahappypichu/) images **first,** and then dig into why he’s designed the location this way and what these tie-downs convey:
 
 <figure markdown="1">
-![alt text](img/creating-concepts/oj/oj-05.png)
+![Sketch of the bedroom/study area](img/creating-concepts/oj/oj-05.png)
 <figcaption>showing off the bedroom / study</figcaption>
 </figure>
 
 <figure markdown="1">
-![alt text](img/creating-concepts/oj/oj-06.png)
+![Sketch of the outdoor area with a telescope and couch](img/creating-concepts/oj/oj-06.png)
 <figcaption>showing off the balcony and stairs leading down into the living room</figcaption>
 </figure>
 
 <figure markdown="1">
-![alt text](img/creating-concepts/oj/oj-07.png)
+![Sketch of the main indoor living area](img/creating-concepts/oj/oj-07.png)
 <figcaption>showing off the living room, the kitchen to the left, and the stairs in more detail</figcaption>
 </figure>
 
 <figure markdown="1">
-![alt text](img/creating-concepts/oj/oj-08.png)
+![Sketch of the view when standing outside the front door](img/creating-concepts/oj/oj-08.png)
 <figcaption>showing off the front door, balcony, and some more stuff in the distance</figcaption>
 </figure>
 
