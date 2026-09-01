@@ -186,7 +186,7 @@ In this layout you can see the main living area on the right – complete with a
 Let’s look at some example location and layout images:
 
 <details>
-  <summary>☢ Half Life</summary>
+  <summary>☢️ Half Life</summary>
   <div class="tab-content" markdown="1">
 One of the interesting things with Half Life’s concept/planning art is the different levels of quality in there. I’m also a fan of the tied-down images below having little layouts in the corner – it’s an interesting way of combining the layout and tied-down images.
 

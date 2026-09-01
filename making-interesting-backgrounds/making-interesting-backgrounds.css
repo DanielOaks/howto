@@ -24,3 +24,49 @@ body.md #content :is(.dark img), .base-formatting :is(.dark img) {
     --tw-invert: invert(0%);
     --tw-hue-rotate: hue-rotate(0deg);
 }
+
+details {
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    background-color: #f6f8fa;
+    margin: 0.75em 0;
+    padding: 0.5em 1em;
+    transition: background-color 0.2s ease;
+}
+#content :is(.dark details) {
+    border-color: #334;
+    background-color: #112;
+}
+
+details[open] {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+#content :is(.dark details[open]) {
+    background-color: #001;
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.25em 0;
+  user-select: none;
+}
+
+summary:hover {
+  color: #0969da;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #d0d7de;
+  margin-bottom: 0.2em;
+  padding-bottom: 0.5em;
+}
+#content :is(.dark details[open] summary) {
+    border-bottom-color: #334;
+}
+
+.tab-content {
+  padding-top: 0.25em;
+  line-height: 1.6;
+}
