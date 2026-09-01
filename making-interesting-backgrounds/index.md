@@ -23,3 +23,6 @@ Upon completion of this course, you should be able to:
 In this course, ‘locations’ mean the places you’ll try to represent. And ‘backgrounds’ are the representations of those on 2D media. This course has been structured to help you come up with / think about locations and how to create interesting backgrounds from them. We’ll try to emphasise understanding and skills that will serve you across different mediums.
 
 Rather that constructing 100% physically accurate backgrounds, we’re focused on making **interesting** and **believable** ones.
+
+## Thanks go out to
+- **OJ** ([@ahappypichu](https://twitter.com/ahappypichu)): For help planning this course, providing art / examples, and being an amazing sounding board on the aspects of background art, concepting, etc.
