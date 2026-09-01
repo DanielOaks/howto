@@ -1,5 +1,6 @@
 
-#content img {
+#content figure,
+#content img:not(figure img) {
     max-width: 75%;
     max-height: 70vh;
     border-radius: 0.8em;
@@ -10,12 +11,48 @@
                 0 8px 10px -6px rgba(0, 0, 0, 0.02);
 }
 
-#content :is(.dark img) {
+#content img:not(figure img) {
+    max-height: 70vh;
+}
+
+#content figure {
+    display: table;
+    width: fit-content;
+    margin: 1em 0;
+}
+
+#content figure img {
+    max-width: 100%;
+    max-height: 70vh;
+    display: block;
+    border: none;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+#content figure figcaption {
+    padding-top: 6px;
+    font-size: 0.9em;
+    text-align: center;
+    font-style: italic;
+    color: #334;
+}
+
+#content :is(.dark figure),
+#content :is(.dark img:not(figure img)) {
     border-color: #000;
     background: #223;
 }
 
-#content img + img {
+#content :is(.dark figure figcaption) {
+    color: #ccd;
+}
+
+#content img + img,
+#content img + figure,
+#content figure + figure
+#content figure + img {
     margin-top: .25em;
 }
 

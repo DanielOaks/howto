@@ -243,17 +243,26 @@ We won’t focus too much on creating interesting shots in this lesson – that�
 
 This section will be different from the ones above – let’s take a look at [OJ’s](https://twitter.com/ahappypichu/) images **first,** and then dig into why he’s designed the location this way and what these tie-downs convey:
 
+<figure markdown="1">
 ![alt text](img/creating-concepts/oj/oj-05.png)
-*showing off the bedroom / study*
+<figcaption>showing off the bedroom / study</figcaption>
+</figure>
 
+<figure markdown="1">
 ![alt text](img/creating-concepts/oj/oj-06.png)
-*showing off the balcony and stairs leading down into the living room*
+<figcaption>showing off the balcony and stairs leading down into the living room</figcaption>
+</figure>
 
+<figure markdown="1">
 ![alt text](img/creating-concepts/oj/oj-07.png)
-*showing off the living room, the kitchen to the left, and the stairs in more detail*
+<figcaption>showing off the living room, the kitchen to the left, and the stairs in more detail</figcaption>
+</figure>
 
+<figure markdown="1">
 ![alt text](img/creating-concepts/oj/oj-08.png)
-*showing off the front door, balcony, and some more stuff in the distance*
+<figcaption>showing off the front door, balcony, and some more stuff in the distance</figcaption>
+</figure>
+
 
 ### Answer more questions
 Everything should provide context without having to rely on exposition. Basically: the **elements inside** your location will help explain things without words. One of the main reasons for adding detail is to give more context and answer more questions.
