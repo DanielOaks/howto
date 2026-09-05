@@ -5,25 +5,37 @@ datafile: making-interesting-backgrounds
 ---
 
 ## 👋 Introduction
-In this lesson we’re talking about creating locations to draw. This includes everything from creating the ideas to laying out the place and thinking about how to fill the location with life. This is sort of a concept art boot camp for environments, and is a lesson you’ll want to re-visit later, so strap in.
+In this lesson we’re talking about creating locations to draw. This includes everything from creating the ideas to laying out the place and thinking about how to fill it with life. This lesson is sort of a concept art boot camp for environments, and you may want to re-visit it later. Let's get stuck in.
 
 ### Learning objectives
 With this lesson, you’ll:
-- Learn how to think up interesting concepts.
+- Learn how to create interesting concepts.
 - Learn how to take a concept and flesh it out.
 - Gain tools and techniques to make those concepts are as good as they can be.
 
 ### Approaches to concepting
-Making an interesting location, and interesting backgrounds in general, is all about providing context without having to rely on exposition. That means conveying information without using text.
+Making an interesting locations and backgrounds is all about providing context without having to rely on exposition. That means giving the viewer information without using text. Your goal is to create a space that, on its own, tells the viewer all they need to know.
 
-But you can still use text while concepting and designing locations! Just remember that your goal is to create a space that, on its own, tells the viewer all the info they need. If you’re doing things that **explain, without needing to be said,** you’re on the right track.
+You can dive straight into the sketching and images, start with text to focus on the ideas first – it's all up to you. Collecting references to inspire you or use as jumping-off points is also a good way to start.
 
-Also, especially while you’re learning, using text instead of sketching may help you **focus on the ideas,** rather than worrying about whether you can get those ideas **looking correct**, as well 🖼️✍️😅 Feel free to approach concepting however works best for you!
+We'll focus on this approach:
+
+1. **Definition:** Clearly define what the location is/does.
+2. **Exploration:** Start thumbnailing to explore the location.
+3. **Add interest:** While thumbnailing, look at reference, answer questions, and add more interest.
+4. **Refine:** Choose which thumbnails work best and refine.
+5. **Layout:** Create a layout sketch based on your thumbnails.
+6. **Review:** Check your details and review this location.
+7. **Tie down:** Create your final concept art.
+
+---
+
+This is a very general approach. You may find that you prefer to re-arrange these steps or go about it your own way, and that's fine. But this has all the core steps you need to create interesting location concepts.
 
 ## 🤔 Coming up with interesting concepts
-The main creative step when it comes to concepting is to, well, come up with the concepts. And some people are able to just take a page and start sketching out ideas!!
+The main creative step when it comes to concepting is to, well, come up with the concepts.
 
-But for those of us who are left staring at a blank page, let’s go through some steps to help get those creative juices flowing.
+Some people are able to just take a page and start sketching out ideas! But for those of us who are left staring at a blank page, let’s go through the steps above to help get those creative juices flowing.
 
 ### Define the problem space
 Let’s ask ourselves some questions to help nail down what we’re doing:
